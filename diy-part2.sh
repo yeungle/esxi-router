@@ -21,6 +21,32 @@
 
 rm -rf feeds/luci/themes/luci-theme-argon
 
+git clone --depth=1 -b main https://github.com/fw876/helloworld.git
+cp -rf helloworld/chinadns-ng package/chinadns-ng
+cp -rf helloworld/dns2socks package/dns2socks
+cp -rf helloworld/dns2tcp package/dns2tcp
+cp -rf helloworld/gn package/gn
+cp -rf helloworld/hysteria package/hysteria
+cp -rf helloworld/ipt2socks package/ipt2socks
+cp -rf helloworld/lua-neturl package/lua-neturl
+cp -rf helloworld/luci-app-ssr-plus package/luci-app-ssr-plus
+cp -rf helloworld/microsocks package/microsocks
+cp -rf helloworld/mosdns package/mosdns
+cp -rf helloworld/naiveproxy package/naiveproxy
+cp -rf helloworld/redsocks2 package/redsocks2
+cp -rf helloworld/shadow-tls package/shadow-tls
+cp -rf helloworld/shadowsocks-rust package/shadowsocks-rust
+cp -rf helloworld/shadowsocksr-libev package/shadowsocksr-libev
+cp -rf helloworld/simple-obfs package/simple-obfs
+cp -rf helloworld/tcping package/tcping
+cp -rf helloworld/trojan package/trojan
+cp -rf helloworld/tuic-client package/tuic-client
+cp -rf helloworld/v2ray-core package/v2ray-core
+cp -rf helloworld/v2ray-plugin package/v2ray-plugin
+cp -rf helloworld/v2raya package/v2raya
+cp -rf helloworld/xray-core package/xray-core
+cp -rf helloworld/xray-plugin package/xray-plugin
+
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
 
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
