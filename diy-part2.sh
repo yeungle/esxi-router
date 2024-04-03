@@ -23,10 +23,10 @@ rm -rf feeds/luci/themes/luci-theme-argon
 
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
 
-git clone --depth=1 https://github.com/linkease/nas-packages.git nas-packages
-cp -rf nas-packages/network/services/ddnsto
-git clone --depth=1 https://github.com/linkease/nas-packages-luci.git nas-packages-luci
-cp -rf nas-packages-luci/luci/luci-app-ddnsto
+git clone --depth=1 https://github.com/linkease/nas-packages.git package/nas-packages
+cp -rf package/nas-packages/network/services/ddnsto
+git clone --depth=1 https://github.com/linkease/nas-packages-luci.git package/nas-packages-luci
+cp -rf package/nas-packages-luci/luci/luci-app-ddnsto
 
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
