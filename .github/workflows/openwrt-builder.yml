@@ -15,6 +15,12 @@ name: OpenWrt Builder
 on:
   repository_dispatch:
   workflow_dispatch:
+  
+  push:
+    branches:
+      - master
+    paths:
+      - '.config'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
