@@ -15,12 +15,6 @@ name: OpenWrt Builder
 on:
   repository_dispatch:
   workflow_dispatch:
-  
-  push:
-    branches:
-      - master
-    paths:
-      - 'x86_64/x86_64.config'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -33,8 +27,6 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  FILE_NAME: x86_64
-  PRODUCT_NAME: x86_64
 
 jobs:
   build:
