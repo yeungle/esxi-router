@@ -16,6 +16,12 @@ on:
   repository_dispatch:
   workflow_dispatch:
 
+  push:
+    branches:
+      - master
+    paths:
+      - 'x86_64/x86_64.config'
+
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
