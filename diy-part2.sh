@@ -19,15 +19,14 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
-rm -rf feeds/luci/themes/luci-theme-argon
-
 git clone https://github.com/fw876/helloworld.git package/helloworld
 
 git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
 
 git clone https://github.com/kenzok8/small-package.git package/kenzok8-packages
 
-git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 package/luci-theme-argon
+rm -rf feeds/luci/themes/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a -f
