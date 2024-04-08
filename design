@@ -1,0 +1,7 @@
+
+config global
+	option navbar 'display'
+	option save '保存更改'
+	option navbar_proxy 'shadowsocksr'
+	option mode 'normal'
+
