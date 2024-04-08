@@ -27,7 +27,7 @@ git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app
 
 git clone https://github.com/kenzok8/small-package.git package/kenzok8-packages
 
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 package/luci-theme-argon
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a -f
