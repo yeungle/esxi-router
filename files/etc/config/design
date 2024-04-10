@@ -2,6 +2,6 @@
 config global
 	option navbar 'display'
 	option save '保存更改'
-	option navbar_proxy 'shadowsocksr'
+	option navbar_proxy 'passwall'
 	option mode 'normal'
 
