@@ -21,6 +21,8 @@
 
 rm -rf feeds/luci/themes/luci-theme-argon
 
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
+
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
 
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
